@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarView</title>
 
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.17.2/dist/css/uikit.min.css"
+    />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.2/dist/js/uikit-icons.min.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div
+      uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; end: + *; offset: 80"
+    >
+      <nav class="uk-navbar-container">
+        <div class="uk-container">
+          <div uk-navbar>
+            <div class="uk-navbar-left"></div>
+            <div class="uk-navbar-right">
+              <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li>
+                  <a href="#">Parent</a>
+                  <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                      <li class="uk-active"><a href="#">Active</a></li>
+                      <li><a href="#">Item</a></li>
+                      <li><a href="#">Item</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Item</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>
