@@ -3,7 +3,59 @@
   margin: 0;
 }
 
+/*Color*/
+.cadetblue {
+  color: cadetblue !important;
+}
+
 .logo {
   font-size: 24px;
-  color: cadetblue;
+  color: cadetblue !important;
+  font-weight: bold;
+}
+
+.bold-title {
+  font-weight: bold;
+}
+
+#menubutton {
+  font-size: 24px;
+}
+
+#menubutton:hover {
+  cursor: pointer;
+}
+
+.fa-car {
+  font-size: 20px;
+}
+
+.uk-card {
+  border-radius: 20px 20px 0 0 !important;
+}
+
+/*Model Viewer*/
+model-viewer {
+  width: 100%;
+  height: 500px;
+}
+
+.fa-qrcode:hover {
+  cursor: pointer;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.button-2d {
+  margin-right: -15px !important;
+  border-radius: 20px 0 0 20px !important;
+}
+
+.button-3d {
+  border-radius: 0 20px 20px 0 !important;
 }
