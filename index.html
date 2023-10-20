@@ -6,7 +6,8 @@
     <title>CarView</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/loader.css" type="text/css" media="all" />
 
     <!-- UIkit CSS -->
     <link
@@ -14,26 +15,52 @@
       href="https://cdn.jsdelivr.net/npm/uikit@3.17.2/dist/css/uikit.min.css"
     />
 
+    <!-- Javascript -->
+    <script
+      src="javascript/loader.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+
+    <!-- Fontawesome -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.2/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.2/dist/js/uikit-icons.min.js"></script>
   </head>
   <body>
+    <!-- Preloader -->
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+
     <!-- Navigation Bar -->
     <div
-      uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; end: + *; offset: 80"
+      uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; end: + *;"
     >
       <nav class="uk-navbar-container">
-        <div class="uk-container">
+        <div class="uk-container uk-background-default uk-box-shadow-small">
           <div uk-navbar>
             <div class="uk-navbar-left">
-              <h1 class="logo">CARVIEW</h1>
+              <a
+                class="uk-navbar-item uk-logo logo"
+                href="#"
+                aria-label="Back to Home"
+                >CARVIEW</a
+              >
             </div>
-            <div class="uk-navbar-right">
+            <div class="uk-navbar-right uk-visible@m">
               <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href="#">Active</a></li>
+                <li class="uk-active"><a href="#">Home</a></li>
                 <li>
-                  <a href="#">Parent</a>
+                  <a href="#">Car</a>
                   <div class="uk-navbar-dropdown">
                     <ul class="uk-nav uk-navbar-dropdown-nav">
                       <li class="uk-active"><a href="#">Active</a></li>
@@ -45,9 +72,72 @@
                 <li><a href="#">Item</a></li>
               </ul>
             </div>
+            <div class="uk-navbar-right uk-hidden@m uk-block">
+              <i
+                id="menubutton"
+                uk-icon="icon: menu; ratio: 1.5;"
+                uk-toggle="target: #offcanvas-nav"
+              ></i>
+            </div>
           </div>
         </div>
       </nav>
     </div>
+    <div
+      id="offcanvas-nav"
+      uk-offcanvas="overlay: true; flip: true; mode: reveal;"
+    >
+      <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-default">
+          <li class="uk-active">
+            <a href="index.html"
+              ><span class="uk-margin-small-right" uk-icon="icon: home"></span>
+              Home</a
+            >
+          </li>
+          <li>
+            <a href="project/index.html"
+              ><span class="uk-margin-small-right far fa-car"></span> Car</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main Hero -->
+    <div class="uk-section">
+      <div class="uk-container">
+        <div class="uk-flex@m uk-flex-none">
+          <div class="hero-text">
+            <h2 class="bold-title">3D Preview Car</h2>
+            <p>
+              Virtual reality technology to see the shape of the car from your
+              device
+            </p>
+          </div>
+          <div class="hero-img">
+            <img src="img/hero-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Info Web -->
+    <div class="uk-section uk-background-muted uk-padding info">
+      <div class="uk-container">
+        <h2 class="bold-title uk-text-center cadetblue">About Us</h2>
+        <p class="uk-text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Scelerisque viverra mauris in aliquam sem fringilla. Velit dignissim
+          sodales ut eu sem integer vitae justo eget. Quis viverra nibh cras
+          pulvinar. Fames ac turpis egestas sed tempus urna et. Massa eget
+          egestas purus viverra accumsan in nisl nisi scelerisque. Id aliquet
+          risus feugiat in.
+        </p>
+      </div>
+    </div>
+
+    <footer></footer>
   </body>
 </html>
