@@ -1,11 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
+  font-family: "Ubuntu" sans-serif;
+}
+
+.flex {
+  display: block;
+}
+
+@media only screen and (min-width: 640px) {
+  .flex {
+    display: flex;
+  }
+}
+
+.uk-navbar-container {
+  z-index: 999;
 }
 
 /*Color*/
 .cadetblue {
   color: cadetblue !important;
+}
+
+.uk-background-main {
+  background-color: #E0F7FA !important;
 }
 
 .logo {
