@@ -52,18 +52,19 @@
                     </div>
                     <div class="uk-navbar-right uk-visible@m">
                         <ul class="uk-navbar-nav">
-                            <li class="uk-active"><a href="#">Home</a></li>
+                            <li class="uk-active"><a href="#">Beranda</a></li>
                             <li>
-                                <a href="#">Car</a>
-                                <div class="uk-navbar-dropdown">
-                                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                                       <li><a href="bmw-m3-coupe-e30.html">BMW M3 Coupe E30</a></li>
+                  <a href="#">Mobil</a>
+                  <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                      <li><a href="bmw-m3-coupe-e30.html">BMW M3 Coupe E30</a></li>
                       <li><a href="ford-mustang-1965.html">Ford Mustang 1965</a></li>
                       <li><a href="lamborghini-countach-lpi-800-4.html">Lamborghini Countach LPI 800-4</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="#">Item</a></li>
+                       <li><a href="mercedes-a45.html">Mercedes Benz A45 AMG</a></li>
+                       <li><a href="volvo-v60-polestar.html">Volvo V60 Polestar 2013</a></li>
+                    </ul>
+                  </div>
+                </li>
                         </ul>
                     </div>
                     <div class="uk-navbar-right uk-hidden@m uk-block">
@@ -76,8 +77,17 @@
     <div id="offcanvas-nav" uk-offcanvas="overlay: true; flip: true; mode: reveal;">
         <div class="uk-offcanvas-bar">
             <ul class="uk-nav uk-nav-default">
-                <li class="uk-active"><a href="index.html"><span class="uk-margin-small-right" uk-icon="icon: home"></span> Home</a></li>
-                <li><a href="project/index.html"><span class="uk-margin-small-right far fa-car"></span> Car</a></li>
+                <li class="uk-active"><a href="index.html"><span class="uk-margin-small-right" uk-icon="icon: home"></span> Beranda</a></li>
+                <li class="uk-parent">
+                <a href="car"><span class="uk-margin-small-right far fa-car"></span> Mobil</a>
+                <ul class="uk-nav-sub">
+                    <li><a href="bmw-m3-coupe-e30.html">BMW M3 Coupe E30</a></li>
+                      <li><a href="ford-mustang-1965.html">Ford Mustang 1965</a></li>
+                      <li><a href="lamborghini-countach-lpi-800-4.html">Lamborghini Countach LPI 800-4</a></li>
+                       <li><a href="mercedes-a45.html">Mercedes Benz A45 AMG</a></li>
+                       <li><a href="volvo-v60-polestar.html">Volvo V60 Polestar 2013</a></li>
+                </ul>
+            </li>
             </ul>
         </div>
     </div>
@@ -159,7 +169,7 @@
     </div>
 
     <div id="modal-example" uk-modal>
-        <div class="uk-modal-dialog uk-modal-body">
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
             <img class="center" src="../img/qrcode/bmw-m3-coupe.png" alt="">
         </div>
     </div>

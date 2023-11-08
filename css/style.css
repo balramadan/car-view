@@ -55,6 +55,12 @@
   border-radius: 20px 20px 0 0 !important;
 }
 
+.timprofile {
+  font-size: 48px;
+  text-align: center;
+  color: cadetblue;
+}
+
 /*Model Viewer*/
 model-viewer {
   width: 100%;
