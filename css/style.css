@@ -29,6 +29,14 @@
   background-color: #E0F7FA !important;
 }
 
+.uk-background-footer {
+  background-color: cadetblue !important;
+}
+
+.uk-text-white {
+  color: white !important;
+}
+
 .logo {
   font-size: 24px;
   color: cadetblue !important;

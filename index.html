@@ -109,11 +109,11 @@
     <!-- Main Hero -->
     <div class="uk-section">
       <div class="uk-container">
-        <div class="flex uk-flex-center@s">
-          <div class="hero-img uk-flex-last@s">
+        <div class="flex uk-grid uk-flex-middle uk-flex-center@s">
+          <div class="uk-width-1-2@s hero-img uk-flex-last@s">
             <img src="img/hero-img.png" alt="" />
           </div>
-          <div class="hero-text">
+          <div class="uk-width-1-3@s hero-text uk-text-center uk-text-left@s">
             <h2 class="bold-title">Platform terdepan untuk Mobil 3D & AR di web</h2>
             <p>
               Rasakan Teknologi 3D dan Augmented Reality untuk melihat bentuk mobil melalui perangkat
@@ -126,13 +126,13 @@
 
     <!-- Info Web -->
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E0F7FA" fill-opacity="1" d="M0,64L60,85.3C120,107,240,149,360,181.3C480,213,600,235,720,213.3C840,192,960,128,1080,117.3C1200,107,1320,149,1380,170.7L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-    <div class="uk-section uk-background-main uk-padding info">
+    <div class="uk-section uk-background-main uk-padding@s info">
       <div class="uk-container">
         <h2 class="bold-title uk-text-center cadetblue">Tentang Kami</h2>
-        <p class="uk-text-center">
-          Website ini dibuat sebagai teknik pemasaran mobil dengan menggunakan teknologi Virtual Reality dan Augmented Reality secara online di website
+        <p class="uk-text-center uk-text-muted uk-width-1-2@s uk-margin-auto">
+          Website ini dibuat sebagai teknik pemasaran mobil dengan menggunakan teknologi Augmented Reality secara online di website
         </p>
-        <h3 class="uk-text-center uk-text-muted">Tim</h3>
+        <h3 class="uk-text-center">Tim</h3>
         
         <div uk-slider class="uk-padding">
           <ul class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-2">
@@ -164,7 +164,40 @@
         </div>
       </div>
     </div>
+    
+    <div id="parallaximg" class="uk-section uk-height-medium@s uk-background-cover uk-light uk-flex" uk-parallax="bgy: -60; grayscale: 80;" style="background-image: url('img/parallax.jpg');">
+      <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical bold-title" uk-parallax="target: #parallaximg;">Bring Imagination to Life</h1>
+    </div>
+    
+    <div class="uk-section">
+      <div class="uk-container uk-padding">
+        <h2 class="uk-text-center bold-title">FAQ</h2>
+        <ul uk-accordion>
+          <li>
+            <a class="uk-accordion-title" href>Apa kegunaan website ini?</a>
+          <div class="uk-accordion-content">Kegunaan website ini adalah sebagai media pemasaran mobil dengan memanfaatkan teknologi AR</div>
+          </li>
+        </ul>
+        <ul uk-accordion>
+          <li>
+            <a class="uk-accordion-title" href>Bagaimana cara mengaktifkan mode AR?</a>
+          <div class="uk-accordion-content">Pada halaman mobil yang dipilih, klik ikon QRcode lalu scan. Setelah di scan klik ikon AR yang ada di bawah kanan mobil 3D.</div>
+          </li>
+        </ul>
+        <ul uk-accordion>
+          <li>
+            <a class="uk-accordion-title" href>Dimana saya bisa menguji AR mobil ini?</a>
+          <div class="uk-accordion-content">Pada mode AR mobil 3D akan melakukan scanning pada objek datar seperti tanah atau meja, namun untuk hasil yang maksimal pastikan anda menguji nya di tempat yang luas.</div>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-    <footer></footer>
+    <footer class="uk-section uk-container uk-background-footer">
+      <div class="uk-flex uk-flex-between uk-text-white">
+        <div>&#169;2023 CARVIEW</div>
+        <div>Made with &#9749;</div>
+      </div>
+    </footer>
   </body>
 </html>
