@@ -37,6 +37,17 @@
   color: white !important;
 }
 
+.link {
+  color: cadetblue;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.link:hover {
+  color: skyblue;
+  text-decoration: none;
+}
+
 .logo {
   font-size: 24px;
   color: cadetblue !important;
